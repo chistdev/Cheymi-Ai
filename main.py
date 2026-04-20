@@ -16,12 +16,12 @@ dp = Dispatcher()
 main_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [
-            KeyboardButton("🤖 О нас"),
-            KeyboardButton("🕒 Время и дата")
+            KeyboardButton(text="🤖 О нас"),
+            KeyboardButton(text="🕒 Время и дата")
         ],
         [
-            KeyboardButton("✏️ Реши пример"),
-            KeyboardButton("📚 История")
+            KeyboardButton(text="✏️ Реши пример"),
+            KeyboardButton(text="📚 История")
         ]
     ],
     resize_keyboard=True
