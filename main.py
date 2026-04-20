@@ -71,7 +71,7 @@ async def handle_message(message: types.Message):
         )
         await message.answer(
             "📚 Выберите событие для изучения:", 
-            reply_markup=keyboard
+            reply_markup=keyboard  # Теперь всё правильно
         )
 
     else:
@@ -96,5 +96,5 @@ async def main():
     print("✅ BOT STARTED")  
     await dp.start_polling(bot)
 
-if __name__ == "__main__":
+if name == "__main__":
     asyncio.run(main())
